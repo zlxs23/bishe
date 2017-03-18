@@ -1,0 +1,5 @@
+2017年3月18日13:27:26
+参考 另一个 毕设 爬取 各种 房子信息 的网站
+58, ganji, lianjia, anjuke, woaiwojia
+https://github.com/lihansunbai/Fang_Scrapy
+
