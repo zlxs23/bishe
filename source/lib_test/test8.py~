@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# http://202.200.151.19/browse/cls_browsing_tree.php
+# GET: ?s_doctype=all&cls=A&lvl=1
+# mean: 展开 A 类下 所有子类 当前 展开 第 1 级
+# GET: ?s_doctype=all&cls=A1&lvl=2
+# mean: 展开 A1类下 所有子类 当前 展开 第 2 级
+# http://docs.python-requests.org/zh_CN/latest/user/quickstart.html
+# requests.get(url, payload_dict)
+# bs 来 检测当前 还有那些 id 下 a 对应 src 是否 还是 ../tpl/images/open.png
+# 判断是否还可以展开
+# 是 则 还可以展开
+# 否 则 已经到 最低级
+# 以上过程 用一个 id: searchF(url) dict 对 来记录当前 id
+# 以上过程 仅仅使用 GET 而不用模拟 Browser
+# id_url_dict: 是否可以 嵌套 添加 以 level 区分
+[{A}
+ {B}
+ {C}
+ {D}
+ ...
+ ]
