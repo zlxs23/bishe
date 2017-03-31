@@ -70,7 +70,7 @@ def make_cls_record(cls=None, clsname=None, page=None):
         book_cls_num = int(b_clsnum_tag.text)
         b_page_tag = bsObj.find('select', attrs={'name': 'topage'})
         if not b_page_tag:
-            page_num = None
+            page_num = 1
         else:
             page_num = int(b_page_tag.contents[-2].text)
         book_cls_record = {
@@ -80,7 +80,7 @@ def make_cls_record(cls=None, clsname=None, page=None):
         return book_cls_record
     except Exception as e:
         return None
-    
+
 
 def get_cls2level(cls_id):
     """
